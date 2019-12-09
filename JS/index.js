@@ -6,13 +6,8 @@ window.onload = () => {
   button.onclick = () => {
     if (!clicked) {
       rerender();
-      setTimeout(reset, 5000);
     }
   };
-
-  function reset() {
-    clicked = false;
-  }
 
   function loadJS() {
     var head = document.getElementsByTagName("head")[0];
